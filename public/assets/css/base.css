@@ -6,7 +6,10 @@
     --grey-text: #888888;
     --red-sale: #C92127;
     --grey-bg: #F5F5F5;
-    --font: 'Roboto', sans-serif;
+    --font: "Roboto", sans-serif;
+    --white-bg: #ffffff;
+    --grey-light: #CDCFD0;
+    --white-bg: #F0F0F0;
 }
 
 * {
@@ -46,4 +49,26 @@ ul {
 img {
     width: 100%;
     display: block;
+}
+
+a {
+    display: inline-block;
+}
+
+i {
+    display: inline-block;
+}
+
+/* btn-1 */
+.btn-1 {
+    padding: 0 35px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.display-text-14 {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--grey-text);
 }
