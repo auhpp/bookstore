@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #2E96C5;
+    --black-title: #333333;
+    --grey-text: #888888;
+    --red-sale: #C92127;
+    --grey-bg: #F5F5F5;
+    --font :'Roboto', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, rgb(65, 88, 208), rgb(200, 80, 192));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    text-align: center;
+    border-radius: 15px;
+    height: 500px;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.form_title {
+    display: flex;
+    justify-content: space-between;
+}
+.form_title-register {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-family: var(--font);
+    font-weight: bold;
+}
+
+.form_title-login {
+    color: var(--black-title);
+    font-size: 18px;
+    font-family: var(--font);
+    font-weight: bold;
+}
+
+#form {
+    margin-top: 20px;
+}
+.form_group {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.form_group-input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    color: var(--grey-text);
+    font-size: 16px;
+    font-family: var(--font);
+}
+
+.form_group-input:focus ~ .under-line {
+   width: 100%;
+}
+
+.form_group-error .under-line {
+    border-bottom: 2px solid var(--red-sale);
+}
+.under-line {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    width: 0;
+    border-bottom: 2px solid var(--primary-color);
+    transition: 0.4s;
+}
+
+
+.form_group-error-message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 12px;
+    font-family: var(--font);
+    color: var(--red-sale);
+}
+.form_description {
+    margin-top: 10px;
+}
+.form_description-content {
+    color: var(--black-title);
+    font-size: 14px;
+    font-family: var(--font);
+}
+
+.form_description-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.form_control {
+    position: absolute;
+    right: 20px;
+}
+
+.btn_back ,.btn-agree{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.btn_back {
+    background-color: var(--grey-bg);
+}
+
+.btn-agree {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.form_social {
+    width: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    bottom: 20px;
+}
+
+.btn_facebook{
+    background-color: var(--primary-color);
+    color: #fff;
+    flex: 1;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+.btn_google{
+    background-color: var(--grey-bg);
+    color: var(--black-title);
+    flex: 1;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+
+
