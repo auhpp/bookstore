@@ -11,13 +11,13 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link css boostrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/boostrap/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- link css -->
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
 </head>
 
 <body>
@@ -139,7 +139,7 @@
                                     <a href="#">Sản phẩm</a>
                                 </li>
                                 <li class="nav-item nav-item-hide">
-                                    <a href="#">Tin tức</a>
+                                    <a href="#">Blog</a>
                                 </li>
                                 <li class="nav-item nav-item-hide">
                                     <a href="#">Liên hệ</a>
@@ -156,7 +156,7 @@
                                     <a href="#">Sản phẩm</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#">Tin tức</a>
+                                    <a href="#">Blog</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#">Liên hệ</a>
@@ -169,9 +169,1479 @@
         </div>
     </header>
     <!-- End header -->
-    <section>
-        <img src="./assets/img/momo.png" alt="" style="height: 100vh; margin-top: 800px; display: block;">
-    </section>
+
+    <!-- main -->
+    <main>
+        <!-- slide -->
+        <section class="slides">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active slide-item" data-bs-interval="10000">
+                        <div class="main-content-slide">
+                            <div class="product">
+                                <img src="./assets/img/slide-1.jpg" alt="">
+                            </div>
+                            <div class="content-slide position-right">
+                                <h1 class="title">Sách mới ra mắt sale 50% khi mua 2 quyển</h1>
+                                <a href="#" class="btn-2 btn-slide">Mua ngay</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="main-content-slide">
+                            <div class="product">
+                                <img class="slide-img-2" src="./assets/img/slide-2.jpg" alt="">
+                            </div>
+                            <div class="content-slide position-left">
+                                <h1 class="title">Sách mới ra mắt sale 20% khi mua 2 quyển</h1>
+                                <a href="#" class="btn-2 btn-slide">Mua ngay</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev slide-btn-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next slide-btn-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        <!-- end slide -->
+
+        <!-- tag -->
+        <section class="tags">
+            <div class="container">
+                <div class="row tag-list">
+                    <div class="col-xl-3 col-md-6 ">
+                        <div class="tag">
+                            <div class="icon">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Miễn phí vận chuyển</h4>
+                                <span>Đơn hàng trên 1 triệu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 ">
+                        <div class="tag">
+                            <div class="icon">
+                                <i class="fa-solid fa-arrow-rotate-right"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Đảm bảo hoàn tiên</h4>
+                                <span>Hoàn tiền 100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 ">
+                        <div class="tag">
+                            <div class="icon">
+                                <i class="fa-solid fa-box"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Dễ dàng đổi trả</h4>
+                                <span>Trong vòng 10 ngày</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="tag">
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Ưu đãi hàng ngày</h4>
+                                <span>Khi bạn đăng nhập</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end tag -->
+
+        <!-- category -->
+        <section class="categories-home">
+            <div class="container">
+                <div class="inner-wrap">
+                    <div class="head-title">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        <h3 class="title">Danh mục sản phẩm</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-sm-4 col-6">
+                            <a href="#" class="category">
+                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" alt="" class="img-category">
+                                <span class="title">Sách thiếu nhi</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-4 col-6">
+                            <a href="#" class="category">
+                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" alt="" class="img-category">
+                                <span class="title">Sách thiếu nhi</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-4 col-6">
+                            <a href="#" class="category">
+                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" alt="" class="img-category">
+                                <span class="title">Sách thiếu nhi</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-4 col-6">
+                            <a href="#" class="category">
+                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" alt="" class="img-category">
+                                <span class="title">Sách thiếu nhi</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-4 col-6">
+                            <a href="#" class="category">
+                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" alt="" class="img-category">
+                                <span class="title">Sách thiếu nhi</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-4 col-6">
+                            <a href="#" class="category">
+                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" alt="" class="img-category">
+                                <span class="title">Sách thiếu nhi</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- category -->
+
+        <!--  today suggestion -->
+        <section class="today-suggestion">
+            <div class="container">
+                <div class="head-inner-title">
+                    <div class="head-title">
+                        <h2 class="title">Gợi ý hôm nay</h2>
+                    </div>
+                    <div class="progress" style="height: 4px">
+                        <div class="progress-bar" style="width: 30%;"></div>
+                    </div>
+                </div>
+                <div class="row products">
+                    <div class="col-xl-2 col-md-3 col-6">
+                        <div class="product">
+                            <a href="#" class="card">
+                                <div class="card-img">
+                                    <img src="./assets/img/toi-la-beto.jpg" class="card-img-top" alt="image product">
+                                </div>
+                                <div class="card-body content">
+                                    <div class="title">
+                                        <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                    </div>
+                                    <div class="price-product">
+                                        <div class="current-price">
+                                            <span>89.000</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                        <div class="discount-price">
+                                            <div class="percent">
+                                                -10%
+                                            </div>
+                                            <div class="original-price">
+                                                100.000
+                                                <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="start-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="quantity">
+                                            <span>Đã bán 352</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6">
+                        <div class="product">
+                            <a href="#" class="card">
+                                <div class="card-img">
+                                    <img src="./assets/img/toi-la-beto.jpg" class="card-img-top" alt="image product">
+                                </div>
+                                <div class="card-body content">
+                                    <div class="title">
+                                        <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                    </div>
+                                    <div class="price-product">
+                                        <div class="current-price">
+                                            <span>89.000</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                        <div class="discount-price">
+                                            <div class="percent">
+                                                -10%
+                                            </div>
+                                            <div class="original-price">
+                                                100.000
+                                                <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="start-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="quantity">
+                                            <span>Đã bán 352</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6">
+                        <div class="product">
+                            <a href="#" class="card">
+                                <div class="card-img">
+                                    <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" class="card-img-top"
+                                        alt="image product">
+                                </div>
+                                <div class="card-body content">
+                                    <div class="title">
+                                        <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                    </div>
+                                    <div class="price-product">
+                                        <div class="current-price">
+                                            <span>89.000</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                        <div class="discount-price">
+                                            <div class="percent">
+                                                -10%
+                                            </div>
+                                            <div class="original-price">
+                                                100.000
+                                                <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="start-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="quantity">
+                                            <span>Đã bán 352</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6">
+                        <div class="product">
+                            <a href="#" class="card">
+                                <div class="card-img">
+                                    <img src="./assets/img/nhung-nguoi-hang-xom.jpg" class="card-img-top"
+                                        alt="image product">
+                                </div>
+                                <div class="card-body content">
+                                    <div class="title">
+                                        <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                    </div>
+                                    <div class="price-product">
+                                        <div class="current-price">
+                                            <span>89.000</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                        <div class="discount-price">
+                                            <div class="percent">
+                                                -10%
+                                            </div>
+                                            <div class="original-price">
+                                                100.000
+                                                <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="start-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="quantity">
+                                            <span>Đã bán 352</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6">
+                        <div class="product">
+                            <a href="#" class="card">
+                                <div class="card-img">
+                                    <img src="./assets/img/toi-la-beto.jpg" class="card-img-top" alt="image product">
+                                </div>
+                                <div class="card-body content">
+                                    <div class="title">
+                                        <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                    </div>
+                                    <div class="price-product">
+                                        <div class="current-price">
+                                            <span>89.000</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                        <div class="discount-price">
+                                            <div class="percent">
+                                                -10%
+                                            </div>
+                                            <div class="original-price">
+                                                100.000
+                                                <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="start-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="quantity">
+                                            <span>Đã bán 352</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6">
+                        <div class="product">
+                            <a href="#" class="card">
+                                <div class="card-img">
+                                    <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" class="card-img-top"
+                                        alt="image product">
+                                </div>
+                                <div class="card-body content">
+                                    <div class="title">
+                                        <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                    </div>
+                                    <div class="price-product">
+                                        <div class="current-price">
+                                            <span>89.000</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                        <div class="discount-price">
+                                            <div class="percent">
+                                                -10%
+                                            </div>
+                                            <div class="original-price">
+                                                100.000
+                                                <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="start-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="quantity">
+                                            <span>Đã bán 352</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6">
+                        <div class="product">
+                            <a href="#" class="card">
+                                <div class="card-img">
+                                    <img src="./assets/img/toi-la-beto.jpg" class="card-img-top" alt="image product">
+                                </div>
+                                <div class="card-body content">
+                                    <div class="title">
+                                        <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                    </div>
+                                    <div class="price-product">
+                                        <div class="current-price">
+                                            <span>89.000</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                        <div class="discount-price">
+                                            <div class="percent">
+                                                -10%
+                                            </div>
+                                            <div class="original-price">
+                                                100.000
+                                                <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="start-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="quantity">
+                                            <span>Đã bán 352</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6">
+                        <div class="product">
+                            <a href="#" class="card">
+                                <div class="card-img">
+                                    <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" class="card-img-top"
+                                        alt="image product">
+                                </div>
+                                <div class="card-body content">
+                                    <div class="title">
+                                        <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                    </div>
+                                    <div class="price-product">
+                                        <div class="current-price">
+                                            <span>89.000</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                        <div class="discount-price">
+                                            <div class="percent">
+                                                -10%
+                                            </div>
+                                            <div class="original-price">
+                                                100.000
+                                                <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="start-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="quantity">
+                                            <span>Đã bán 352</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6">
+                        <div class="product">
+                            <a href="#" class="card">
+                                <div class="card-img">
+                                    <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" class="card-img-top"
+                                        alt="image product">
+                                </div>
+                                <div class="card-body content">
+                                    <div class="title">
+                                        <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                    </div>
+                                    <div class="price-product">
+                                        <div class="current-price">
+                                            <span>89.000</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                        <div class="discount-price">
+                                            <div class="percent">
+                                                -10%
+                                            </div>
+                                            <div class="original-price">
+                                                100.000
+                                                <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="start-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="quantity">
+                                            <span>Đã bán 352</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6">
+                        <div class="product">
+                            <a href="#" class="card">
+                                <div class="card-img">
+                                    <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" class="card-img-top"
+                                        alt="image product">
+                                </div>
+                                <div class="card-body content">
+                                    <div class="title">
+                                        <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                    </div>
+                                    <div class="price-product">
+                                        <div class="current-price">
+                                            <span>89.000</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                        <div class="discount-price">
+                                            <div class="percent">
+                                                -10%
+                                            </div>
+                                            <div class="original-price">
+                                                100.000
+                                                <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="start-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="quantity">
+                                            <span>Đã bán 352</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6">
+                        <div class="product">
+                            <a href="#" class="card">
+                                <div class="card-img">
+                                    <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" class="card-img-top"
+                                        alt="image product">
+                                </div>
+                                <div class="card-body content">
+                                    <div class="title">
+                                        <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                    </div>
+                                    <div class="price-product">
+                                        <div class="current-price">
+                                            <span>89.000</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                        <div class="discount-price">
+                                            <div class="percent">
+                                                -10%
+                                            </div>
+                                            <div class="original-price">
+                                                100.000
+                                                <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="start-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="quantity">
+                                            <span>Đã bán 352</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6">
+                        <div class="product">
+                            <a href="#" class="card">
+                                <div class="card-img">
+                                    <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg" class="card-img-top"
+                                        alt="image product">
+                                </div>
+                                <div class="card-body content">
+                                    <div class="title">
+                                        <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                    </div>
+                                    <div class="price-product">
+                                        <div class="current-price">
+                                            <span>89.000</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                        <div class="discount-price">
+                                            <div class="percent">
+                                                -10%
+                                            </div>
+                                            <div class="original-price">
+                                                100.000
+                                                <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="start-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="quantity">
+                                            <span>Đã bán 352</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-view-all">
+                    <a href="#" class="view-all btn-2">
+                        <span>
+                            Xem tất cả
+                        </span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end today suggestion -->
+
+        <!-- trending and new book -->
+        <section class="trending-and-new-book">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-5">
+                        <div class="trending">
+                            <div class="head">
+                                <h2 class="title">Sách bán chạy</h2>
+                            </div>
+                            <div class="row products">
+                                <div class="col-md-12 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg"
+                                                        class="img-fluid rounded-start" alt="img-card-product">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body content">
+                                                        <div class="title">
+                                                            <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                        </div>
+                                                        <div class="price-product">
+                                                            <div class="current-price">
+                                                                <span>89.000</span>
+                                                                <sup>đ</sup>
+                                                            </div>
+                                                            <div class="discount-price">
+                                                                <div class="percent">
+                                                                    -10%
+                                                                </div>
+                                                                <div class="original-price">
+                                                                    100.000
+                                                                    <sup>đ</sup>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="reviews">
+                                                            <div class="start-icon">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <div class="quantity">
+                                                                <span>Đã bán 352</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./assets/img/toi-la-beto.jpg"
+                                                        class="img-fluid rounded-start" alt="img-card-product">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body content">
+                                                        <div class="title">
+                                                            <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                        </div>
+                                                        <div class="price-product">
+                                                            <div class="current-price">
+                                                                <span>89.000</span>
+                                                                <sup>đ</sup>
+                                                            </div>
+                                                            <div class="discount-price">
+                                                                <div class="percent">
+                                                                    -10%
+                                                                </div>
+                                                                <div class="original-price">
+                                                                    100.000
+                                                                    <sup>đ</sup>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="reviews">
+                                                            <div class="start-icon">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <div class="quantity">
+                                                                <span>Đã bán 352</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./assets/img/con-chut-gi-de-nho.jpg"
+                                                        class="img-fluid rounded-start" alt="img-card-product">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body content">
+                                                        <div class="title">
+                                                            <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                        </div>
+                                                        <div class="price-product">
+                                                            <div class="current-price">
+                                                                <span>89.000</span>
+                                                                <sup>đ</sup>
+                                                            </div>
+                                                            <div class="discount-price">
+                                                                <div class="percent">
+                                                                    -10%
+                                                                </div>
+                                                                <div class="original-price">
+                                                                    100.000
+                                                                    <sup>đ</sup>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="reviews">
+                                                            <div class="start-icon">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <div class="quantity">
+                                                                <span>Đã bán 352</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./assets/img/nhung-nguoi-hang-xom.jpg"
+                                                        class="img-fluid rounded-start" alt="img-card-product">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body content">
+                                                        <div class="title">
+                                                            <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                        </div>
+                                                        <div class="price-product">
+                                                            <div class="current-price">
+                                                                <span>89.000</span>
+                                                                <sup>đ</sup>
+                                                            </div>
+                                                            <div class="discount-price">
+                                                                <div class="percent">
+                                                                    -10%
+                                                                </div>
+                                                                <div class="original-price">
+                                                                    100.000
+                                                                    <sup>đ</sup>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="reviews">
+                                                            <div class="start-icon">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <div class="quantity">
+                                                                <span>Đã bán 352</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./assets/img/mua-he-khong-ten.png"
+                                                        class="img-fluid rounded-start" alt="img-card-product">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body content">
+                                                        <div class="title">
+                                                            <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                        </div>
+                                                        <div class="price-product">
+                                                            <div class="current-price">
+                                                                <span>89.000</span>
+                                                                <sup>đ</sup>
+                                                            </div>
+                                                            <div class="discount-price">
+                                                                <div class="percent">
+                                                                    -10%
+                                                                </div>
+                                                                <div class="original-price">
+                                                                    100.000
+                                                                    <sup>đ</sup>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="reviews">
+                                                            <div class="start-icon">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <div class="quantity">
+                                                                <span>Đã bán 352</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-view-all">
+                                <a href="#" class="view-all btn-2">
+                                    <span>
+                                        Xem tất cả
+                                    </span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7">
+                        <div class="new-book">
+                            <div class="head-inner-title">
+                                <div class="head-title">
+                                    <h2 class="title">Sách mới phát hành</h2>
+                                </div>
+                                <div class="progress" style="height: 4px">
+                                    <div class="progress-bar" style="width: 30%;"></div>
+                                </div>
+                            </div>
+                            <div class="row products">
+                                <div class="col-xl-3 col-lg-4 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="card-img">
+                                                <img src="./assets/img/toi-la-beto.jpg" class="card-img-top"
+                                                    alt="image product">
+                                            </div>
+                                            <div class="card-body content">
+                                                <div class="title">
+                                                    <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                </div>
+                                                <div class="price-product">
+                                                    <div class="current-price">
+                                                        <span>89.000</span>
+                                                        <sup>đ</sup>
+                                                    </div>
+                                                    <div class="discount-price">
+                                                        <div class="percent">
+                                                            -10%
+                                                        </div>
+                                                        <div class="original-price">
+                                                            100.000
+                                                            <sup>đ</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="start-icon">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <span>Đã bán 352</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="card-img">
+                                                <img src="./assets/img/toi-la-beto.jpg" class="card-img-top"
+                                                    alt="image product">
+                                            </div>
+                                            <div class="card-body content">
+                                                <div class="title">
+                                                    <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                </div>
+                                                <div class="price-product">
+                                                    <div class="current-price">
+                                                        <span>89.000</span>
+                                                        <sup>đ</sup>
+                                                    </div>
+                                                    <div class="discount-price">
+                                                        <div class="percent">
+                                                            -10%
+                                                        </div>
+                                                        <div class="original-price">
+                                                            100.000
+                                                            <sup>đ</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="start-icon">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <span>Đã bán 352</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="card-img">
+                                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg"
+                                                    class="card-img-top" alt="image product">
+                                            </div>
+                                            <div class="card-body content">
+                                                <div class="title">
+                                                    <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                </div>
+                                                <div class="price-product">
+                                                    <div class="current-price">
+                                                        <span>89.000</span>
+                                                        <sup>đ</sup>
+                                                    </div>
+                                                    <div class="discount-price">
+                                                        <div class="percent">
+                                                            -10%
+                                                        </div>
+                                                        <div class="original-price">
+                                                            100.000
+                                                            <sup>đ</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="start-icon">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <span>Đã bán 352</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="card-img">
+                                                <img src="./assets/img/nhung-nguoi-hang-xom.jpg" class="card-img-top"
+                                                    alt="image product">
+                                            </div>
+                                            <div class="card-body content">
+                                                <div class="title">
+                                                    <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                </div>
+                                                <div class="price-product">
+                                                    <div class="current-price">
+                                                        <span>89.000</span>
+                                                        <sup>đ</sup>
+                                                    </div>
+                                                    <div class="discount-price">
+                                                        <div class="percent">
+                                                            -10%
+                                                        </div>
+                                                        <div class="original-price">
+                                                            100.000
+                                                            <sup>đ</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="start-icon">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <span>Đã bán 352</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="card-img">
+                                                <img src="./assets/img/toi-la-beto.jpg" class="card-img-top"
+                                                    alt="image product">
+                                            </div>
+                                            <div class="card-body content">
+                                                <div class="title">
+                                                    <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                </div>
+                                                <div class="price-product">
+                                                    <div class="current-price">
+                                                        <span>89.000</span>
+                                                        <sup>đ</sup>
+                                                    </div>
+                                                    <div class="discount-price">
+                                                        <div class="percent">
+                                                            -10%
+                                                        </div>
+                                                        <div class="original-price">
+                                                            100.000
+                                                            <sup>đ</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="start-icon">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <span>Đã bán 352</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="card-img">
+                                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg"
+                                                    class="card-img-top" alt="image product">
+                                            </div>
+                                            <div class="card-body content">
+                                                <div class="title">
+                                                    <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                </div>
+                                                <div class="price-product">
+                                                    <div class="current-price">
+                                                        <span>89.000</span>
+                                                        <sup>đ</sup>
+                                                    </div>
+                                                    <div class="discount-price">
+                                                        <div class="percent">
+                                                            -10%
+                                                        </div>
+                                                        <div class="original-price">
+                                                            100.000
+                                                            <sup>đ</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="start-icon">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <span>Đã bán 352</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="card-img">
+                                                <img src="./assets/img/toi-la-beto.jpg" class="card-img-top"
+                                                    alt="image product">
+                                            </div>
+                                            <div class="card-body content">
+                                                <div class="title">
+                                                    <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                </div>
+                                                <div class="price-product">
+                                                    <div class="current-price">
+                                                        <span>89.000</span>
+                                                        <sup>đ</sup>
+                                                    </div>
+                                                    <div class="discount-price">
+                                                        <div class="percent">
+                                                            -10%
+                                                        </div>
+                                                        <div class="original-price">
+                                                            100.000
+                                                            <sup>đ</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="start-icon">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <span>Đã bán 352</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="card-img">
+                                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg"
+                                                    class="card-img-top" alt="image product">
+                                            </div>
+                                            <div class="card-body content">
+                                                <div class="title">
+                                                    <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                </div>
+                                                <div class="price-product">
+                                                    <div class="current-price">
+                                                        <span>89.000</span>
+                                                        <sup>đ</sup>
+                                                    </div>
+                                                    <div class="discount-price">
+                                                        <div class="percent">
+                                                            -10%
+                                                        </div>
+                                                        <div class="original-price">
+                                                            100.000
+                                                            <sup>đ</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="start-icon">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <span>Đã bán 352</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="card-img">
+                                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg"
+                                                    class="card-img-top" alt="image product">
+                                            </div>
+                                            <div class="card-body content">
+                                                <div class="title">
+                                                    <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                </div>
+                                                <div class="price-product">
+                                                    <div class="current-price">
+                                                        <span>89.000</span>
+                                                        <sup>đ</sup>
+                                                    </div>
+                                                    <div class="discount-price">
+                                                        <div class="percent">
+                                                            -10%
+                                                        </div>
+                                                        <div class="original-price">
+                                                            100.000
+                                                            <sup>đ</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="start-icon">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <span>Đã bán 352</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="card-img">
+                                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg"
+                                                    class="card-img-top" alt="image product">
+                                            </div>
+                                            <div class="card-body content">
+                                                <div class="title">
+                                                    <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                </div>
+                                                <div class="price-product">
+                                                    <div class="current-price">
+                                                        <span>89.000</span>
+                                                        <sup>đ</sup>
+                                                    </div>
+                                                    <div class="discount-price">
+                                                        <div class="percent">
+                                                            -10%
+                                                        </div>
+                                                        <div class="original-price">
+                                                            100.000
+                                                            <sup>đ</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="start-icon">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <span>Đã bán 352</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="card-img">
+                                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg"
+                                                    class="card-img-top" alt="image product">
+                                            </div>
+                                            <div class="card-body content">
+                                                <div class="title">
+                                                    <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                </div>
+                                                <div class="price-product">
+                                                    <div class="current-price">
+                                                        <span>89.000</span>
+                                                        <sup>đ</sup>
+                                                    </div>
+                                                    <div class="discount-price">
+                                                        <div class="percent">
+                                                            -10%
+                                                        </div>
+                                                        <div class="original-price">
+                                                            100.000
+                                                            <sup>đ</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="start-icon">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <span>Đã bán 352</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-6">
+                                    <div class="product">
+                                        <a href="#" class="card">
+                                            <div class="card-img">
+                                                <img src="./assets/img/cho-toi-xin-mot-ve-di-tuoi-tho.jpg"
+                                                    class="card-img-top" alt="image product">
+                                            </div>
+                                            <div class="card-body content">
+                                                <div class="title">
+                                                    <h3>Nguyễn Nhật Ánh - Tôi là Bêtô</h3>
+                                                </div>
+                                                <div class="price-product">
+                                                    <div class="current-price">
+                                                        <span>89.000</span>
+                                                        <sup>đ</sup>
+                                                    </div>
+                                                    <div class="discount-price">
+                                                        <div class="percent">
+                                                            -10%
+                                                        </div>
+                                                        <div class="original-price">
+                                                            100.000
+                                                            <sup>đ</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="start-icon">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <span>Đã bán 352</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-view-all">
+                                <a href="#" class="view-all btn-2">
+                                    <span>
+                                        Xem tất cả
+                                    </span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--end trending and new book -->
+
+        <!-- banner-sm -->
+        <section class="banner-sm">
+            <img src="./assets/img/banner_home_1.jpg" alt="">
+        </section>
+        <!-- end banner-sm -->
+
+    </main>
+    <!-- end main -->
     <!-- footer -->
     <footer class="footer">
         <div class="container">
@@ -297,14 +1767,12 @@
 
 
     <!-- link js boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
-    <script src="./assets/boostrap/bootstrap.bundle.min.js"></script>
-    <script src="./assets/boostrap/jquery.slim.min.js"></script>
 
     <!-- link js -->
     <script type="module" src="./assets/js/header.js">
