@@ -68,9 +68,12 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ol
+{
     margin: 0;
 }
+
 
 main {
     background-color: var(--grey-bg);
@@ -216,11 +219,12 @@ main {
 
 /* form focus */
 
-.form-select:focus{
+.form-select:focus {
     box-shadow: none;
     outline: none;
     border: none;
 }
+
 /* response */
 
 @media screen and (max-width: 1199.98px) {
