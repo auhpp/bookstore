@@ -1,0 +1,269 @@
+body {
+    background-color: #fff;
+}
+.control {
+    background-color: rgb(46, 150, 197, 0.1);
+    height: 100vh;
+    position: relative;
+    border-left: 1px dotted #ccc;
+}
+
+.control .user {
+    display: flex;
+    justify-content: center;
+}
+
+.control-user {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.control-user .icon-add {
+    padding: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--primary-color);
+    position: absolute;
+    right: 0;
+}
+.control-user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.control-user .user-name {
+    margin-top: 10px;
+}
+
+.control-list {
+    margin-top: 20px;
+}
+
+.control-list-item {
+    width: 100%;
+    padding: 10px;
+}
+
+.control-list-item i , .sign-out i{
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.cliked-on-control-item {
+    border-left: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.cliked-on-control-item i {
+    color: var(--primary-color);
+}
+
+.sign-out {
+    position: absolute;
+    padding: 10px;
+    bottom: 10px;
+}
+
+/* Content*/
+.content {
+    height: 100vh;
+    padding: 20px 0;
+}
+
+/* Content Settings */
+.content-settings {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-settings .title {
+    margin-bottom: 20px;
+}
+.content-settings .form-input {
+    padding: 10px 0;
+}
+
+.form-input label {
+    font-size: 14px;
+}
+
+.form-input input {
+    width: 70%;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-top: 10px;
+    outline: none;
+}
+
+.form-input i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	margin: 0;
+	-webkit-appearance: none;
+}
+
+/* Content order management */
+
+.content-order-management {
+    display: none;
+}
+
+.content-order-management .title {
+    font-weight: 400;
+}
+
+.content-order-management .list-type-order {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border: 1px dotted #ccc;
+}
+
+.list-type-order .type-order-item {
+    width: 100%;
+    padding: 5px 0;
+    color: var(--grey-text);
+    text-align: center;
+}
+/* Khi click vaò order-item thì thêm class này */
+.clicked-on-order-item {
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.content-order-management .find-order {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px dotted #ccc;
+    border-radius: 5px;
+    text-align: center;
+    height: 30px;
+}
+
+.find-order .icon-find {
+    margin: 0 10px;
+}
+
+.find-order input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.btn-find {
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 14px;
+    border-left: 1px solid #ccc;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.btn-find:hover {
+    opacity: 0.7;
+}
+/* Product */
+.content-order-management .product {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+.product .title {
+    color: var(--grey-text);
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.product .list-product {
+    margin-top: 20px;
+}
+
+.list-product .product-item {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-item .product-details {
+    display: flex;
+}
+.product-details img {
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    align-items: center;
+}
+
+.product-details .infor-product {
+    margin-left: 10px;
+}
+
+.infor-product .name-product {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.infor-product .name-shop {
+    display: flex;
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--grey-text);
+}
+
+.name-shop i {
+    margin-right: 5px;
+}
+
+.product .amount {
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
+    padding: 15px 0;
+}
+
+.amount .amount-value {
+    font-size: 16px;
+    text-align: right;
+}
+
+.amount .btn-buy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-buy .btn-buy-back {
+    margin-right: 10px;
+}
+
+.btn-buy h4 {
+    margin: 0;
+    color: var(--primary-color);
+}
+.btn-buy .btn-buy-back, .btn-buy .btn-detail {
+    padding: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
