@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/account.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="control">
+                    <div class="user">
+                        <div class="control-user">
+                            <i class="fa-solid fa-plus icon-add"></i>
+                            <img src="assets/img/user1.jpg" alt="">
+                            <h4 class="user-name">Adam Jonhson</h4>
+                        </div>
+                    </div>
+
+                    <ul class="control-list">
+                        <li class="control-list-item settings cliked-on-control-item">
+                            <i class="fa-solid fa-gear"></i>Chỉnh sửa trang cá nhân
+                        </li>
+                        <li class="control-list-item information">
+                            <i class="fa-solid fa-user"></i>Thông tin cá nhân
+                        </li>
+                    </ul>
+
+                    <div class="sign-out">
+                        <i class="fa-solid fa-right-from-bracket"></i>Sign out
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="content content-settings">
+                    <h2 class="title">Account Settings</h2>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-input">
+                                <label for="first-name">First name</label><br>
+                                <input type="text" name="" id="first-name" value="Adam">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-input">
+                                <label for="last-name">Last name</label><br>
+                                <input type="text" name="" id="last-name" value="Jonhson">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-input">
+                                <label for="user-name">User name</label><br>
+                                <input type="text" name="" id="user-name">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-input">
+                                <label for="password">Password</label><br>
+                                <input type="password" name="" id="password" value="********">
+                                <i class="fa-solid fa-pen"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-input">
+                                <label for="email">Email</label><br>
+                                <input type="email" name="" id="email">
+                                <i class="fa-solid fa-pen"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-input">
+                                <label for="phone-number">Phone number</label><br>
+                                <input type="number" name="" id="phone-number">
+                                <i class="fa-solid fa-pen"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content content-order-management">
+                    <h2 class="title">Đơn hàng của tôi</h2>
+                    <ul class="list-type-order">
+                        <li class="type-order-item clicked-on-order-item">Tất cả đơn</li>
+                        <li class="type-order-item">Chờ thanh toán</li>
+                        <li class="type-order-item">Đang xử lí</li>
+                        <li class="type-order-item">Đang vận chuyển</li>
+                        <li class="type-order-item">Đã giao</li>
+                        <li class="type-order-item">Đã hủy</li>
+                    </ul>
+                    <div class="find-order">
+                        <i class="fa-solid fa-magnifying-glass icon-find"></i>
+                        <input type="text" name="" id="" placeholder="Tìm đơn hàng theo mã đơn hàng, nhà bán hoặc tên sản phẩm">
+                        <h4 class="btn-find">Tìm đơn hàng</h4>
+                    </div>
+
+                    <div class="product">
+                        <div class="title">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            Giao hàng thành công
+                        </div>
+                        <ul class="list-product">
+                            <li class="product-item">
+                                <div class="product-details">
+                                    <img src="assets/img/book2.jpg" alt="">
+                                    <div class="infor-product">
+                                        <h4 class="name-product">
+                                            Vượt bẫy cảm xúc
+                                        </h4>
+                                        <div class="name-shop">
+                                            <i class="fa-solid fa-shop"></i>
+                                            <h5>Book store</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <h4>144.000 đ</h4>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div class="product-details">
+                                    <img src="assets/img/book2.jpg" alt="">
+                                    <div class="infor-product">
+                                        <h4 class="name-product">
+                                            Vượt bẫy cảm xúc
+                                        </h4>
+                                        <div class="name-shop">
+                                            <i class="fa-solid fa-shop"></i>
+                                            <h5>Book store</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <h4>144.000 đ</h4>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div class="product-details">
+                                    <img src="assets/img/book2.jpg" alt="">
+                                    <div class="infor-product">
+                                        <h4 class="name-product">
+                                            Vượt bẫy cảm xúc
+                                        </h4>
+                                        <div class="name-shop">
+                                            <i class="fa-solid fa-shop"></i>
+                                            <h5>Book store</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <h4>144.000 đ</h4>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div class="product-details">
+                                    <img src="assets/img/book2.jpg" alt="">
+                                    <div class="infor-product">
+                                        <h4 class="name-product">
+                                            Vượt bẫy cảm xúc
+                                        </h4>
+                                        <div class="name-shop">
+                                            <i class="fa-solid fa-shop"></i>
+                                            <h5>Book store</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <h4>144.000 đ</h4>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="amount">
+                            <h3 class="amount-value">1.200.000 đ</h3>
+                            <div class="btn-buy">
+                                <div class="btn-buy-back"><h4>Mua lại</h4></div>
+                                <div class="btn-detail"><h4>Xem chi tiết</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/account.js"></script>
+</body>
+
+</html>
