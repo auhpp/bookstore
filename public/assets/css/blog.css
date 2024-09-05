@@ -12,9 +12,9 @@
     box-sizing: border-box;
     font-family: var(--font);
 }
+
 .container-fluid {
     margin: 20px 0;
-    
 }
 
 .intro {

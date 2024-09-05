@@ -1,6 +1,6 @@
 /* slide */
 .slides {
-    padding-top: 140px;
+    padding-top: 120px;
 }
 
 .slides .slide {
@@ -139,93 +139,6 @@
     margin-top: 20px;
 }
 
-.products .product {
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 14px;
-}
-
-.products .product .content {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 6px;
-}
-
-.products .product .card {
-    border: none;
-    border-radius: 8px;
-}
-
-.products .product:hover {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
-}
-
-.products .product .content .card-img img {
-    object-fit: cover;
-    height: 315px;
-}
-
-.products .product .title h3 {
-    color: var(--black-title);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    word-break: break-word;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-.products .product .price-product .current-price {
-    color: var(--red-price);
-    font-weight: bold;
-}
-
-.products .product .price-product .discount-price {
-    display: flex;
-    gap: 10px;
-    margin-top: 2px;
-}
-
-.products .product .price-product .discount-price .percent {
-    color: var(--black-title);
-    padding: 0 6px;
-    display: flex;
-    align-items: center;
-    background-color: var(--grey-bg);
-    font-size: 12px;
-    border-radius: 14px;
-}
-
-.products .product .price-product .discount-price .original-price {
-    font-size: 10px;
-    color: var(--grey-text);
-    text-decoration: line-through;
-}
-
-.products .product .reviews {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.products .product .reviews .star {
-    display: flex;
-}
-
-.products .product .reviews i {
-    font-size: 12px;
-    color: var(--yellow-star);
-}
-
-.products .product .reviews .quantity {
-    color: var(--grey-text);
-    font-size: 14px;
-}
-
 /* end today suggestion */
 
 /*  trending and new book*/
@@ -284,16 +197,6 @@
         max-width: 400px;
     }
 
-    /* today suggestion */
-    .products .product .reviews i {
-        font-size: 10px;
-    }
-
-    .products .product .reviews .quantity {
-        font-size: 12px;
-    }
-
-    /*  end today suggestion*/
 }
 
 @media screen and (max-width: 991.98px) {

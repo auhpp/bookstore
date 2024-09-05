@@ -1,7 +1,7 @@
 /* header */
 .header {
     background-color: var(--white-bg);
-    padding: 4px 0;
+    padding: 6px 0 4px 0;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
@@ -13,12 +13,13 @@
 
 .header .logo img {
     max-width: 180px;
-    height: 80px;
+    height: 60px;
 }
 
 .header .header-top {
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 /* search bar */
@@ -29,7 +30,7 @@
 .header .header-top .search-bar input {
     height: 52px;
     width: 100%;
-    padding: 20px;
+    padding: 0 20px;
     outline: none;
     border: 1px solid #CDCFD0;
     border-radius: 4px 0 0 4px;
@@ -64,7 +65,7 @@
 
 .header .header-top .account i,
 .header .header-top .shopping-cart i {
-    font-size: 18px;
+    font-size: 16px;
     transition: all 0.4s;
 }
 
@@ -77,8 +78,8 @@
     padding: 4px 2px;
     border-radius: 50%;
     background-color: #FF4C58;
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     color: white;
     display: flex;
     align-items: center;
@@ -87,10 +88,15 @@
     transform: translate(50%, -80%);
 }
 
+.header .header-top .shopping-cart .count-number .number{
+    font-size: 10px;
+}
+
 .header .header-top .content-right {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 20px;
 }
 
 .header .header-top .content-right .full-account {
@@ -109,6 +115,7 @@
     border-radius: 2px;
     margin-top: 10px;
     display: none;
+    left: 0;
 }
 
 .header .header-top .content-right .info-account a {
@@ -127,6 +134,7 @@
     border-bottom: 14px solid #fff;
     transform: translate(100%, -100%);
     position: absolute;
+    left: -20px;
 }
 
 .header .header-top .content-right .info-account li {
@@ -144,13 +152,14 @@
 .header .header-bottom .nav-list ul {
     display: flex;
     justify-content: space-between;
+    padding-left: 40px;
 }
 
 .header .header-bottom .nav-list ul .nav-item a {
     font-size: 16px;
     color: var(--black-title);
     text-transform: uppercase;
-    padding: 15px 0;
+    padding: 11px 0;
     font-weight: 700;
     transition: all 0.4s;
     letter-spacing: 1.4px;
@@ -264,6 +273,13 @@
     .header .header-top .bars {
         display: block;
     }
+
+    .header .header-top .content-right{
+        padding: 0;
+    }
+    .header .header-top{
+        text-align: start;
+    }
 }
 
 @media screen and (max-width: 991.98px) {
@@ -277,7 +293,7 @@
     }
 
     .header .header-top .content-right .info-account {
-        left: -30px;
+        left: -10px;
         margin-top: 14px;
     }
 }
@@ -295,10 +311,6 @@
     .header .header-top .shopping-cart .count-number {
         width: 18px;
         height: 18px;
-    }
-
-    .header .logo img {
-        height: 70px;
     }
 }
 
