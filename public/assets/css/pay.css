@@ -1,0 +1,148 @@
+/* Dia chi giao hang */
+.ship-address,
+.pay-method,
+.other-info,
+.re-check-order,
+.info-pay
+{
+    background-color: white;
+    padding: 8px 16px;
+}
+
+.ship-address .title,
+.pay-method .title,
+.other-info .title,
+.re-check-order .title,
+.info-pay .title
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+.pay {
+    margin-top: 14px;
+}
+
+.ship-address .content label,
+.pay-method label,
+.other-info label {
+    font-size: 14px;
+}
+
+.ship-address .content .input-item {
+    padding: 8px 0;
+}
+
+.ship-address .content .input-item input {
+    font-weight: bold;
+}
+
+.ship-address .content .input-item input,
+.ship-address .content .input-item select,
+.input-note
+{
+    padding: 4px 16px;
+    font-size: 14px;
+}
+
+.ship-address .content .input-item select {
+    font-size: 14px;
+}
+
+.ship-address .content .input-item select option {
+    font-size: 13px;
+}
+
+.ship-address .content .form-select:focus {
+    border: 1px solid #ced4da;
+    ;
+}
+
+/* Phuong thuc thanh toan */
+.pay-method {
+    margin-top: 14px;
+}
+
+.pay-method .icon-pay-method {
+    font-size: 26px;
+}
+
+.pay-method-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pay-method .all-pay {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Thong tin khac */
+.other-info {
+    margin-top: 14px;
+}
+
+/* Kiem tra lai don hang */
+.re-check-order {
+    margin-top: 14px;
+}
+
+.re-check-order .product .img-product {
+    max-width: 145px;
+}
+
+.re-check-order .product .info-product {
+    font-size: 14px;
+}
+
+.re-check-order .product .info-product .original-price {
+    text-decoration: line-through;
+    font-size: 13px;
+    color: var(--grey-text);
+}
+
+.re-check-order .product .info-product .price {
+    color: var(--red-sale);
+}
+
+/* Button thanh toan */
+.info-pay{
+    margin-top: 14px;
+}
+
+.info-pay .price,
+.info-pay .ship-fee{
+    font-size: 14px;
+    padding: 2px 0;
+}
+
+.info-pay .sum-price{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px 0;
+}
+
+.info-pay .sum-price .all-price{
+    color: var(--red-sale);
+}
+
+.info-pay .pay-btn{
+    background-color: var(--red-sale);
+    border-color: var(--red-sale);
+    border-radius: 10px;
+    margin-top: 18px;
+    padding-inline: 56px;
+}
+
+.info-pay .content{
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 575.98px) {
+    .ship-address .content .input-item{
+        padding: 2px 0;
+    }
+}

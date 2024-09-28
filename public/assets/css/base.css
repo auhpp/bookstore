@@ -6,7 +6,7 @@
     --black-title: #333333;
     --grey-text: #888888;
     --red-sale: #C92127;
-    --grey-bg: #F5F5F5;
+    --grey-bg: #F0F0F0;
     --font: "Roboto", sans-serif;
     --white-bg: #ffffff;
     --grey-light: #CDCFD0;
@@ -14,6 +14,7 @@
     --red-price: #FF4C58;
     --yellow-star: #FFC70D;
     --grey-text-2: #666;
+    --yellow-dark: #F6A500;
 }
 
 * {
@@ -26,6 +27,7 @@ body {
     font-family: var(--font);
     font-size: 16px;
     line-height: 1.6;
+    background-color: var(--grey-bg);
 }
 
 html {
@@ -69,8 +71,7 @@ h3,
 h4,
 h5,
 h6,
-ol
-{
+ol {
     margin: 0;
 }
 
@@ -103,6 +104,16 @@ main {
     color: white;
 }
 
+/* btn-3 */
+.btn-3 {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    padding: 8px 36px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
 
 .display-text-14 {
     font-size: 14px;
@@ -146,15 +157,16 @@ main {
 .product .card {
     border: none;
     border-radius: 8px;
+    height: 100%;
 }
 
-.product:hover {
+.product .card:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    z-index: 1;
 }
 
-.product .content .card-img img {
-    object-fit: cover;
-    height: 315px;
+.product .card-img img {
+    border-radius: 8px;
 }
 
 .product .title h3 {
@@ -170,18 +182,18 @@ main {
     overflow: hidden;
 }
 
-.product .price-product .current-price {
+.price-product .current-price {
     color: var(--red-price);
     font-weight: bold;
 }
 
-.product .price-product .discount-price {
+.price-product .discount-price {
     display: flex;
     gap: 10px;
     margin-top: 2px;
 }
 
-.product .price-product .discount-price .percent {
+.price-product .discount-price .percent {
     color: var(--black-title);
     padding: 0 6px;
     display: flex;
@@ -191,7 +203,7 @@ main {
     border-radius: 14px;
 }
 
-.product .price-product .discount-price .original-price {
+.price-product .discount-price .original-price {
     font-size: 10px;
     color: var(--grey-text);
     text-decoration: line-through;
@@ -207,7 +219,7 @@ main {
     display: flex;
 }
 
-.product .reviews i {
+.star-icon {
     font-size: 12px;
     color: var(--yellow-star);
 }
@@ -217,11 +229,56 @@ main {
     font-size: 14px;
 }
 
+.star-icon {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.full-state {
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.full-state {
+    width: 40%;
+}
+
 /* form focus */
 
 .form-select:focus {
     box-shadow: none;
     outline: none;
+    border: none;
+}
+
+/* container  */
+.container-850 {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 14px 0;
+    gap: 12px;
+}
+
+.page-link {
+    color: var(--black-title);
+    border: none;
+    padding-inline: 12px;
+    border-radius: 4px;
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary-color);
     border: none;
 }
 

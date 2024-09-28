@@ -1,5 +1,5 @@
 .products-by-category {
-    padding-top: 160px;
+    padding-top: 10px;
     padding-bottom: 60px;
 }
 
@@ -155,24 +155,6 @@
     margin-top: 10px;
 }
 
-.pagination {
-    display: flex;
-    justify-content: center;
-    padding: 14px 0;
-    gap: 12px;
-}
-
-.page-link {
-    color: var(--black-title);
-    border: none;
-    padding-inline: 12px;
-    border-radius: 4px;
-}
-
-.page-item.active .page-link {
-    background-color: var(--primary-color);
-    border: none;
-}
 
 @media screen and (max-width: 998.98px) {
     .filter {
