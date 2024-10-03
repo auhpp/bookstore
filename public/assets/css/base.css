@@ -127,7 +127,7 @@ main {
     background-color: white;
 }
 
-.head-inner-title .head-title .title {
+.head-title .title {
     color: var(--primary-color);
     font-size: 22px;
 }
@@ -138,6 +138,38 @@ main {
 
 .head-inner-title .progress {
     border-radius: 0;
+}
+
+/* head-title product */
+.head-title {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    align-items: center;
+    background-color: white;
+}
+
+.head-title .sort {
+    display: flex;
+    align-items: center;
+}
+
+.head-title .sort .method-sort {
+    width: 200px;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: var(--grey-text-2);
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.head-title .sort span {
+    color: var(--black-title);
 }
 
 /* product hiển thị card nhỏ bên ngoài */

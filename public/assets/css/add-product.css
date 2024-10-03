@@ -1,0 +1,13 @@
+.add-product {
+    padding: 20px;
+    background-color: white;
+    padding-bottom: 10px;
+    height: 100vh;
+}
+
+.add-product .form-add-product input,
+.add-product .form-add-product textarea,
+.add-product .form-add-product select {
+    font-size: 14px;
+    padding: 4px 8px;
+}

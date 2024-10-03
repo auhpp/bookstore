@@ -52,6 +52,7 @@
 
 .filter .category-item .name-category:hover {
     color: #8EC0E3;
+    cursor: pointer;
 }
 
 .filter .category-item input {
@@ -114,6 +115,20 @@
     margin-top: 10px;
     font-size: 13px;
     display: none;
+}
+.filter .filter-btn{
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.filter .filter-btn .btn-reset{
+    background-color: white;
+    color: var(--black-title);
+    margin-bottom: 10px;
+}
+.filter .filter-btn button{
+    padding: 6px 10px;
+    font-weight: 500;
 }
 
 /* products-section */
